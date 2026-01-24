@@ -20,8 +20,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
   min-block-size: 628px;
-  /*block-size: calc(100vh - 20px);*/
-  block-size: 100vh;
+  block-size: calc(100vh - 20px);
   position: relative;
 
   @media (width >= 768px) {
