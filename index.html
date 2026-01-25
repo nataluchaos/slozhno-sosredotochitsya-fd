@@ -10,8 +10,16 @@
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/dark.css" />
-    <link rel="stylesheet" href="./styles/light.css" />
+    <link
+      rel="stylesheet"
+      media="(prefers-color-scheme: dark)"
+      href="./styles/dark.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(prefers-color-scheme: light)"
+      href="./styles/light.css"
+    />
     <link rel="icon" href="./images/favicon.ico" />
     <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./images/favicon.png" />
@@ -24,14 +32,14 @@
         <ul class="header__theme-menu-list font_text">
           <li class="header__theme-menu-item">
             <button
-              class="header__theme-menu-button header__theme-menu-button_type_light header__theme-menu-button_active"
+              class="header__theme-menu-button header__theme-menu-button_type_light"
             >
               день
             </button>
           </li>
           <li class="header__theme-menu-item">
             <button
-              class="header__theme-menu-button header__theme-menu-button_type_auto"
+              class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
               disabled
             >
               авто
@@ -93,7 +101,7 @@
           Что снижает концентрацию внимания?
         </h2>
         <h3 class="subtitle title-decor font_text_bold main__block-what-item">
-          Многозадачность
+          Концентрация
         </h3>
         <p class="main__text font_text main__block-what-item">
           Как концентрация может снижаться из-за… концентрации? Любая стрессовая
