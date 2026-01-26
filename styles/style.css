@@ -83,6 +83,7 @@
 }
 
 .header__rec {
+  display: var(--display-rec);
   position: relative;
   padding: 1px 28px 40px 0;
   color: var(--nav-color);
@@ -115,11 +116,11 @@
   grid-template-columns: 70px;
   gap: 10px;
   align-self: start;
-  padding-block-start: 38px;
+  padding-block-start: var(--padding-rec);
 
   @media (768px <= width < 1023px) {
     gap: 11px;
-    padding-block-start: 144px;
+    padding-block-start: var(--padding-rec);
   }
 
   @media (width >= 1024px) {
@@ -129,7 +130,7 @@
     grid-row: 1/2;
     justify-content: center;
     align-items: start;
-    padding-block-start: 0px;
+    padding-block-start: var(--padding-rec);
   }
 }
 

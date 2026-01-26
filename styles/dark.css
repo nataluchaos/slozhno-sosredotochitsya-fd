@@ -16,4 +16,14 @@
   --font-logo-text: #db00ff;
   --accent-color: #ff0070;
   --fotter-logo-shadow: #ff0070;
+  --display-rec: block;
+  --padding-rec: 38px;
+
+  @media (768px <= width < 1023px) {
+    --padding-rec: 144px;
+  }
+
+  @media (width >= 1024px) {
+    --padding-rec: 0px;
+  }
 }
