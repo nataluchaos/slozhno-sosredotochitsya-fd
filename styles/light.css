@@ -17,15 +17,6 @@
   --accent-color: #ff8dcb;
   --fotter-logo-shadow: #ff0070;
   --display-rec: none;
-  --padding-rec: 64px;
-
-  @media (768px <= width < 1023px) {
-    --padding-rec: 170px;
-  }
-
-  @media (width >= 1024px) {
-    --padding-rec: 0px;
-  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -42,14 +33,5 @@
     --accent-color: #ff8dcb;
     --fotter-logo-shadow: #ff0070;
     --display-rec: none;
-    --padding-rec: 64px;
-
-    @media (768px <= width < 1023px) {
-      --padding-rec: 170px;
-    }
-
-    @media (width >= 1024px) {
-      --padding-rec: 0px;
-    }
   }
 }
