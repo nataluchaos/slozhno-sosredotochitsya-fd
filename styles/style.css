@@ -333,7 +333,7 @@
   }
 }
 
-.main__block-what-item:nth-child(even) {
+.main__block-what .main__subtitle {
   @media (width >= 1024px) {
     grid-row: 2/3;
   }
@@ -354,7 +354,7 @@
   }
 }
 
-.main__block-how-item:first-child {
+.main__block-how .main__title {
   @media (width >= 768px) {
     grid-row-start: 1;
     grid-row-end: 12;
@@ -408,13 +408,6 @@
     padding-top: 1px;
   }
 }
-/*
-.gallery__item {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  object-fit: cover;
-}*/
 
 .gallery__item:nth-child(1) {
   @media (width >= 768px) {
