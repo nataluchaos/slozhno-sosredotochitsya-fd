@@ -12,6 +12,8 @@
   font-size: var(--font-size-text);
 }
 
+/* Начало. Шапка страницы */
+
 .header {
   position: relative;
   display: grid;
@@ -198,6 +200,10 @@
   line-height: 130%;
 }
 
+/* Конец. Шапка страницы */
+
+/* Начало. Основное содержимое страницы */
+
 .main {
   display: grid;
   grid-template-columns: 1fr;
@@ -206,7 +212,7 @@
   padding: 40px 10px 40px;
 
   @media (width >= 768px) {
-    padding: 60px 20px 61px;
+    padding: 60px 20px 62px;
   }
   @media (width >= 1024px) {
     padding: 30px 20px 60px;
@@ -228,40 +234,18 @@
   }
 }
 
-.main__block-why {
-  @media (width >= 768px) {
-    grid-template-columns: 256px 1fr;
-  }
-
-  @media (width >= 1024px) {
-    grid-template-columns: 335px 1fr;
-    padding-block-start: 30px;
-  }
-}
-
-.main__block-why .main__title {
-  @media (width >= 768px) {
-    max-inline-size: 236px;
-    grid-row: 1/5;
-  }
-  @media (width >= 1024px) {
-    max-inline-size: 315px;
-    grid-row: 1/5;
-  }
-}
-
-.main__block-why > p {
-  @media (width >= 1024px) {
-    line-height: 1.3065em;
-  }
-}
-
 .main__title {
   line-height: 131%;
   color: var(--font-color-title);
   padding-block-end: 21px;
   font-size: inherit;
   font-weight: 700;
+}
+
+.main__block-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
 }
 
 .main__subtitle {
@@ -304,11 +288,44 @@
   outline: 1px solid var(--font-color-text);
 }
 
+/* Начало. Секция "Почему" */
+
+.main__block-why {
+  @media (width >= 768px) {
+    grid-template-columns: 256px 1fr;
+  }
+
+  @media (width >= 1024px) {
+    grid-template-columns: 335px 1fr;
+    padding-block-start: 30px;
+  }
+}
+
+.main__block-why .main__title {
+  @media (width >= 768px) {
+    max-inline-size: 236px;
+  }
+
+  @media (width >= 1024px) {
+    max-inline-size: 315px;
+  }
+}
+
+/* Конец. Секция "Почему" */
+
+/* Начало. Секция "Что" */
+
 .main__block-what {
   padding-block-start: 1px;
 
   @media (width >= 768px) {
     padding-block-start: 0px;
+  }
+}
+
+.main__block-what .main__block-card {
+  @media (width >= 768px) {
+    gap: 21px;
   }
 
   @media (width >= 1024px) {
@@ -320,72 +337,73 @@
 }
 
 .main__block-what .main__title {
+  padding-block-end: 21px;
+
   @media (width >= 768px) {
-    padding: 31px 0 19px;
+    padding: 31px 0 20px;
     max-inline-size: 236px;
   }
 
   @media (width >= 1024px) {
-    grid-column: 1/4;
-    grid-row: 1/2;
-    padding: 31px 0 20px;
+    padding: 33px 0 21px;
     max-inline-size: 315px;
   }
 }
 
 .main__block-what .main__subtitle {
-  @media (width >= 1024px) {
-    grid-row: 2/3;
-  }
+  inline-size: 100%;
 }
+
+/* Конец. Секция "Что" */
+
+/* Начало. Секция "Как" */
 
 .main__block-how {
   @media (width >= 768px) {
-    display: grid;
     grid-template-columns: 256px 1fr;
-    grid-template-rows: auto;
     padding: 30px 0 1px;
   }
+
   @media (width >= 1024px) {
-    display: grid;
     grid-template-columns: 335px 1fr;
-    grid-template-rows: auto;
     padding-block-start: 31px;
+  }
+}
+
+.main__block-how .main__block-card {
+  @media (width >= 768px) {
+    padding-block-start: 1px;
   }
 }
 
 .main__block-how .main__title {
   @media (width >= 768px) {
-    grid-row-start: 1;
-    grid-row-end: 12;
     max-inline-size: 236px;
   }
+
   @media (width >= 1024px) {
-    grid-row-start: 1;
-    grid-row-end: 12;
     max-inline-size: 315px;
   }
 }
 
-.main__block-how > p {
-  @media (width >= 768px) {
-    line-height: 1.295em;
-  }
-}
+/* Конец. Секция "Как" */
+
+/* Начало. Галерея */
 
 .gallery {
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
-  padding-top: 1px;
+  padding-block-start: 1px;
 
   @media (width >= 768px) {
-    padding-top: 30px;
+    padding-block-start: 29px;
     gap: 20px;
   }
 
   @media (width >= 1024px) {
-    padding-top: 30px;
+    padding-block-start: 31px;
+    gap: 19px;
   }
 }
 
@@ -404,8 +422,7 @@
   @media (width >= 1024px) {
     grid-template-columns: 1fr 1fr 314px;
     grid-template-rows: 260px 315px 433px;
-    gap: 20px;
-    padding-top: 1px;
+    padding-block-start: 1px;
   }
 }
 
@@ -444,6 +461,11 @@
   object-fit: cover;
   object-position: center;
 }
+/* Конец. Галерея */
+
+/* Конец. Основное содержимое страницы */
+
+/* Начало. Подвал */
 
 .footer {
   position: relative;
@@ -472,3 +494,5 @@
     text-shadow: 2px 2px var(--fotter-logo-shadow);
   }
 }
+
+/* Конец. Подвал */
